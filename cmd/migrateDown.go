@@ -9,7 +9,7 @@ import (
 var migrateDownCmd *cobra.Command
 
 func init() {
-	migrateUpCmd = &cobra.Command{
+	migrateDownCmd = &cobra.Command{
 		Use:   "down",
 		Short: "migrate from v2 to v1",
 		Long:  `Command to downgrade database from v2 to v1`,
