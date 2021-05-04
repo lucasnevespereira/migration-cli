@@ -1,12 +1,13 @@
 CREATE TABLE schools (
-  id INT AUTO_INCREMENT NOT NULL,
-  name VARCHAR(50) total_of_students Int,
-  PRIMARY KEY (id)
+  ID INT AUTO_INCREMENT NOT NULL,
+  name VARCHAR(40),
+  total_students Int,
+  PRIMARY KEY (ID)
 );
 CREATE TABLE students (
-  id INT AUTO_INCREMENT NOT NULL,
+  ID INT(13) NOT NULL,
   name VARCHAR(40),
-  grade INT,
   age INT,
-  PRIMARY KEY (id),
+  grade INT,
+  PRIMARY KEY (ID)
 );
