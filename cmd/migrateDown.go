@@ -38,7 +38,7 @@ func init() {
 			}
 
 			if err = m.Down(); err != nil {
-				fmt.Printf("migrate up error: %v \n", err)
+				fmt.Printf("migrate down error: %v \n", err)
 			}
 
 			fmt.Println("Migrate down done with success")
