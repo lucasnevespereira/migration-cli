@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	"migration-cli/database"
 
 	"github.com/spf13/cobra"
 )
@@ -15,6 +16,7 @@ func init() {
 		Long:  `Command to install version 1 of our application`,
 		Run: func(cmd *cobra.Command, args []string) {
 			fmt.Println("Running migrate up command")
+			database.Open()
 		},
 	}
 
